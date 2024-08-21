@@ -3,10 +3,9 @@ function cambiarCadena(string, callback) {
    // La función de callback se encargará de recibir el string y devolverlo con los cambios.
    // Si no se recibe una función callback entonces se debe retornar el string original.
    // Tu código:
-   if (callback){
+   if (callback)
   var resultado = callback (string)
   return resultado;
-} else return string
-}
+} else return string;
 
 module.exports = cambiarCadena;
